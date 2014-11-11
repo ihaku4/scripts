@@ -1,10 +1,10 @@
 # coding=utf-8
 
-import urllib
+import urllib2
 import urlparse
 import re
 
-htmltext = urllib.urlopen("http://v2ex.com").read()
+htmltext = urllib2.urlopen("http://v2ex.com", timeout = 5).read()
 
 #pattern = u'\\d.*?人在线'
 #regex = re.compile(pattern, re.U)
